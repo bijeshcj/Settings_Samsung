@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
      >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
     
     <View
         android:id="@+id/top_layer_spacing"
         android:layout_width="match_parent"
-        android:layout_height="70dp"/>
+        android:layout_height="55dp"/>
 
     <LinearLayout
         android:layout_below="@id/top_layer_spacing"
@@ -34,12 +31,33 @@
             android:id="@+id/header_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please connect dropbox to keep your contacts in the privacy of your Dropbox."
+            android:text="Please connect dropbox to keep your "
             android:textSize="17sp"
             android:layout_gravity="center"
             android:paddingTop="20dp"
             android:paddingLeft="20dp"
 
+            />
+
+        <TextView
+            android:id="@+id/header_description1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="contacts in the privacy of your Dropbox."
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/header_description2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="information has never been this easy before."
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="gone"
             />
 
         </LinearLayout>
@@ -65,6 +83,4 @@
 
 
 
-    </RelativeLayout>
-
-</ScrollView>
+</RelativeLayout>

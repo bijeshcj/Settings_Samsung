@@ -2,5 +2,8 @@
 <resources>
 
     <color name="nekt_blue">#007ee5</color>
+    <color name="nekt_sea_green">#2f928e</color>
+    <color name="seperator_gray">#F0F0F0</color>
+
 
 </resources>
