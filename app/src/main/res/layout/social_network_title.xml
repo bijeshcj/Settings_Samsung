@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/socialNetworkTitle_rootContainer"
+    android:layout_width="50dp"
+    android:layout_height="50dp">
+
+    <com.bijesh.settings.nekt.ui.TextIndicatedCircleProgressBar
+        android:id="@+id/socialNetworkTitle_importProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/socialNetworkTitle_iv_importCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_launcher"
+        android:visibility="gone"/>
+</FrameLayout>

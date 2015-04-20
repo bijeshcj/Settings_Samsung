@@ -20,12 +20,25 @@
 -->
 
         <activity android:name=".android.uidesign.viewpager.ViewPagerActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/NoTitleTheme"
+            >
+<!--            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter-->>
+        </activity>
+
+        <activity android:name=".nekt.ui.ImportContactsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NoTitleTheme"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
         <activity android:name=".android.uidesign.viewpager.CrossfadeActivity"
             android:label="@string/title_crossfade"

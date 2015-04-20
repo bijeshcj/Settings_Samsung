@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/spacing1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacing1"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher"
+            android:layout_gravity="center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/import_contacts_welcome"
+            android:gravity="center"
+            android:textSize="23sp"
+            />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_layout"
+        android:text="Import below networks to collect all contacts"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc1"
+        android:text="into your Dropbox and keep tracking your"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/desc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc2"
+        android:text="close friends by single visits"
+        android:gravity="center"
+        />
+
+
+    <View
+        android:layout_below="@id/desc3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spacing2"
+        />
+
+
+
+    <LinearLayout
+        android:layout_below="@id/spacing2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/social_networks_layout"
+        android:orientation="vertical"
+        android:background="@color/seperator_gray"
+        >
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.495"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_launcher"
+                    />-->
+                <include
+                    android:id="@+id/importContact_facebook"
+                    layout="@layout/social_network_title"/>
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:layout_gravity="center"
+                    />
+
+
+                </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight=".008"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+
+                android:layout_weight="1.495"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_launcher"
+                    />-->
+                <include
+                    android:id="@+id/importContact_twitter"
+                    layout="@layout/social_network_title"/>
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.495"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_launcher"
+                    />-->
+                <include
+                    android:id="@+id/importContact_linkedIn"
+                    layout="@layout/social_network_title"/>
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Linkedin"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight=".008"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1.495"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_launcher"
+                    />-->
+                <include
+                    android:id="@+id/importContact_gmail"
+                    layout="@layout/social_network_title"/>
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gmail"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.495"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_launcher"
+                    />-->
+                <include
+                    android:id="@+id/importContact_whatsApp"
+                    layout="@layout/social_network_title"/>
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Whatsapp"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight=".008"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:paddingLeft="15dp"
+                android:layout_weight="1.495"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content">
+
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_launcher"
+                    />-->
+                <include
+                    android:id="@+id/importContact_phoneBook"
+                    layout="@layout/social_network_title"/>
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phonebook"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/social_networks_layout"
+        android:id="@+id/spacing3"
+        />
+
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="250dp"
+        android:layout_below="@id/spacing3"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:background="@color/nekt_sea_green"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        />
+
+
+
+</RelativeLayout>
